@@ -1,0 +1,6 @@
+When we are using dagger we should try to implement constructor injection for all the classes we own. That means, we should go to the class and type @Inject annotation in front of the 
+constructor. But in many practical scenario, we cannot modify the class. we are not allowed to open the class & add inject annotation to the constructor. Ex. when u r using
+retrofitclient since retrofit is a third party library we build it using the builder function. When we are using the classes we dont own, the classes from third party libraries 
+we cannot open the class & add ineject annotaiton. For such type of situation we have to use modules , android provider function to provide those dependencies.
+
+For demonstration purpose I am removing Inject annotation in the Memory class. Suppose we are not allowed to inject in this class.
