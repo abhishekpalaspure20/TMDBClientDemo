@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
                 .getSmartPhone()
                 .makeCallWithRecording()
 
+        print("Hello")
+
 //        val smartphone = SmartPhone(Battery(), SimCard(ServiceProvider()), MemoryCard())  ----- > This is not the best practice so we have dagger dependcy injection
 //        smartphone.makeCallWithRecording()
     }
